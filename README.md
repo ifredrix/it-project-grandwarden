@@ -1,147 +1,145 @@
-# IT Project — Skill Directory by Role
+# IT Project — Codename: GrandWarden
 
-> Source: Specific Tasks & Contributions in Development Team Meetings
-> Version: 1.0 | Date: 2026-09-07
-
----
-
-## A. Technical & Development Roles
-
-### Software Architect
-
-* System architecture design & technology selection
-* Application scalability analysis & planning
-* System security design & cyber defense
-* Programming language & framework selection
-
-### Lead Developer (Tech Lead)
-
-* Translating business requirements into technical specifications
-* Breaking down large features into measurable technical tasks
-* Technical planning & team task allocation
-* Bridging communication between business and technical stakeholders
-
-### Front-End Developer
-
-* User interface development
-* Accurately implementing UI designs into code
-* Integrating UI with application logic
-* Intensive collaboration with the design team
-
-### Back-End Developer
-
-* System logic programming
-* Database management & processing
-* Data security & API integration
-* Ensuring smooth data flow from server to user
+> **Skill Directory for Modern Web Application & SaaS Development**
 
 ---
 
-## B. Project Management & Methodology
+## About This Repository
 
-### Project Manager (PM)
+This repository contains a **Skill Directory** specifically designed for **Modern Web & SaaS** application development teams. This directory maps the roles, responsibilities, and skill sets required to build high-quality web applications that are scalable, secure, and user-centric in the 2024–2026 era.
 
-* Project schedule & budget management
-* Progress & work alignment monitoring
-* Managing team workload to prevent burnout
-* Identifying & handling delay risks
-
-### Scrum Master
-
-* Implementing & facilitating Agile/Scrum methodologies
-* Managing work cycles (Sprints)
-* Facilitating daily standup meetings
-* Identifying bottlenecks & ensuring smooth team workflow
+> **Difference from other repos:** This repository is the **Modern Web & SaaS** version of the skill directory. If you are looking for a skill directory for **Native Desktop** projects (WPF, Qt, Swift, Win32), please visit our sister repository: [`it-project-codename-royalchampion`](https://github.com/ifredrix/it-project-codename-royalchampion).
 
 ---
 
-## C. Design & User Research
+## Project Scope
 
-### UX Designer
+This skill directory covers the entire **Software Development Life Cycle (SDLC)** for modern web applications:
 
-* Designing application flows & functionality
-* Researching user behavior & needs
-* Creating user journey maps
-* Designing wireframes
-
-### UI Designer
-
-* Visual design & aesthetics creation
-* Selecting colors, typography, icons, & buttons
-* Designing interface layouts
-* Aligning visual style with product identity
-
-### UX Researcher
-
-* Conducting usability testing
-* Gathering & analyzing feedback from real users
-* Formulating recommendations for improvement
-* Directly validating designs with target users
+| Phase | Related Roles |
+| --- | --- |
+| **Strategy & Business** | Product Manager, Product Owner |
+| **Design & Research** | UX Designer, UI Designer, UX Researcher |
+| **Development** | Software Architect, Lead Developer, Front-End Developer, Back-End Developer |
+| **Testing & Security** | QA Engineer (Manual), QA Automation Engineer, Security Tester |
+| **Deployment & Infrastructure** | DevOps Engineer, System Administrator, Release Manager |
+| **Project Management** | Project Manager, Scrum Master |
 
 ---
 
-## D. Testing & Security
+## File Structure
 
-### QA Engineer (Manual)
+```javascript
+it-project-codename-grandwarden/
+├── SKILL.md          ← Complete Skill Directory (17 roles, 6 categories)
+├── README.md         ← This document
+└── (future assets)
 
-* Functional testing from the perspective of real users
-* Designing test cases
-* Reporting product defects & workflow discrepancies
-* Testing negative scenarios & system limits
+```
 
-### QA Automation Engineer
+### SKILL.md
 
-* Writing automated test scripts
-* Integrating testing tools into the CI/CD Pipeline
-* Continuous testing with every code update
-* Automating key feature verification to save time
+The main file containing detailed descriptions for each role within the team, including:
 
-### Security Tester (Penetration Tester)
-
-* Identifying system security vulnerabilities
-* Testing resilience against cyber attacks
-* Analyzing risks of data leaks & malicious code injection
-* Formulating security recommendations prior to application release
+* **6 Categories** of roles (Technical, PM, Design, Testing, Infrastructure, Strategy)
+* **17 Specific** roles
+* Skills & tasks tailored for the **modern web 2024–2026** context (PWA, microservices, cloud-native, observability, etc.)
 
 ---
 
-## E. Infrastructure & Deployment
+## Supported Technologies & Stacks
 
-### DevOps Engineer
+This skill directory is designed for teams using modern web stacks:
 
-* Setting up automated deployment pipelines (CI/CD Pipeline)
-* Automating application testing & deployment
-* Integrating development–deployment workflows
-* Deploying updates automatically, quickly, & securely
-
-### System Administrator (SysAdmin)
-
-* Server health management & monitoring
-* Cloud infrastructure management
-* Storage capacity & workload monitoring
-* Preventing service downtime during high traffic
-
-### Release Manager
-
-* Application release schedule planning
-* Verifying legal & technical compliance
-* Controlling release readiness
-* Publishing to official app stores
+| Layer | Technology / Framework |
+| --- | --- |
+| **Front-End** | React, Vue, Angular, Svelte, Solid, Next.js, Nuxt, Astro |
+| **Back-End** | Node.js, Python (FastAPI/Django), Go, Java (Spring Boot), .NET |
+| **Database** | PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch |
+| **DevOps** | Docker, Kubernetes, Terraform, GitHub Actions, ArgoCD |
+| **Cloud** | AWS, GCP, Azure, Vercel, Netlify, Cloudflare |
+| **Testing** | Cypress, Playwright, Jest, k6, Pact |
+| **Observability** | Prometheus, Grafana, Datadog, ELK Stack |
 
 ---
 
-## F. Strategy & Business Requirements
+## Team Workflow Based on Skill Directory
 
-### Product Manager (PM)
+```javascript
+Product Manager & Product Owner
+        ↓
+UX Designer → UI Designer → UX Researcher
+        ↓
+Software Architect + Lead Developer
+        ↓
+Front-End Developer + Back-End Developer
+        ↓
+QA Manual + QA Automation + Security Tester
+        ↓
+DevOps + SysAdmin + Release Manager
+        ↓
+Release to Production (Cloud / CDN / Edge)
 
-* Aligning business vision with technical execution
-* Drafting long-term product roadmaps
-* Market competition & competitor analysis
-* Defining product goals & success metrics
+```
 
-### Product Owner (PO)
+> **Project Manager** and **Scrum Master** oversee and coordinate the entire workflow above.
 
-* Managing the prioritized work list (Backlog)
-* Breaking down requirements into user stories
-* Work cycle planning & task detailing
-* Prioritizing work based on highest business value
+---
+
+## When to Use This Directory?
+
+Use this skill directory if your project meets the following criteria:
+
+* [x] **Web browser-based** applications (SaaS, dashboard, portal, marketplace)
+* [x] Requires **scalability** & cloud-native architecture
+* [x] Needs **Progressive Web App (PWA)** or mobile-responsive experience
+* [x] Uses **microservices** or distributed architecture
+* [x] Requires **CI/CD**, containerization, and infrastructure as code
+* [x] Needs **observability** (monitoring, logging, tracing) in production
+* [x] Requires **A/B testing**, analytics, and data-driven product decisions
+
+---
+
+## When NOT to Use This Directory?
+
+Do not use this directory if your project is:
+
+* [ ] **Native desktop** applications (WPF, Qt, Swift, Win32) → use [`royalchampion`](https://github.com/ifredrix/it-project-codename-royalchampion)
+* [ ] **Native mobile** applications (iOS/Android) — requires a Mobile Developer
+* [ ] **AI/ML** projects — requires a Data Scientist & ML Engineer
+* [ ] **Game development** projects — requires a Game Developer & 3D Artist
+* [ ] **IoT / embedded systems** projects — requires an Embedded Engineer
+* [ ] **Blockchain / Web3** projects — requires a Smart Contract Developer
+
+---
+
+## How to Use
+
+1. **Read `SKILL.md**` to understand all available roles and skills.
+2. **Adjust according to your team size:**
+
+* **Small team (5–7 people):** Several roles can be combined (e.g., PM + Scrum Master, UX + UI, DevOps + SysAdmin, Front-End + Back-End as full-stack).
+* **Large team (15–25 people):** Each role can be assigned to a dedicated person, or even multiple people per role.
+
+3. **Add specialist roles** if needed (e.g., Data Engineer, Mobile Developer, Technical Writer, etc.).
+4. **Use as a reference** for:
+
+* Writing job descriptions & hiring
+* Team performance evaluations & career ladders
+* Identifying skill gaps within the team
+* Training & upskilling planning
+
+---
+
+## Contributing
+
+If you find roles or skills that are less relevant to modern web development, or wish to add new trending technologies, feel free to open an **issue** or submit a **pull request**.
+
+---
+
+## Donate
+like this SKILL? Support me (Bitcoin): **1HZ2h3yyYULFT4jEGwB5ESAZUhBj7kPUa2**
+
+---
+
+> *"Guard the web. Scale the future."*
