@@ -10,7 +10,7 @@ the user's request — saving tokens on every skill invocation.
 > **Scope:** modern web & SaaS applications (2024–2026): React/Vue/Next.js,
 > Node.js/FastAPI/Go/Spring Boot, PostgreSQL/MongoDB/Redis, Docker/Kubernetes,
 > AWS/GCP/Azure, observability, PWA, microservices.
-> For native desktop projects, see the sister repository `it-project-royalchampion`.
+> For native desktop projects, see the sister repository [`it-project-royalchampion`](https://github.com/ifredrix/it-project-royalchampion).
 
 ## Repository Structure
 
