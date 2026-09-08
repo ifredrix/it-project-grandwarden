@@ -1,144 +1,76 @@
-# IT Project — Codename: GrandWarden
+# IT Project — Code Name: Grand Warden
 
-> **Skill Directory for Modern Web Application & SaaS Development**
+**Skill Directory for Modern Web Application & SaaS Development** — Progressive Disclosure Edition.
 
----
+This repository is a **Skill** optimized for Claude (Code / Claude.ai). Unlike a
+single monolithic `SKILL.md`, it uses a small parent file + 6 per-category
+reference files, so Claude only reads the content that is actually relevant to
+the user's request — saving tokens on every skill invocation.
 
-## About This Repository
+> **Scope:** modern web & SaaS applications (2024–2026): React/Vue/Next.js,
+> Node.js/FastAPI/Go/Spring Boot, PostgreSQL/MongoDB/Redis, Docker/Kubernetes,
+> AWS/GCP/Azure, observability, PWA, microservices.
+> For native desktop projects, see the sister repository `it-project-codename-royalchampion`.
 
-This repository contains a **Skill Directory** specifically designed for **Modern Web & SaaS** application development teams. This directory maps the roles, responsibilities, and skill sets required to build high-quality web applications that are scalable, secure, and user-centric in the 2024–2026 era.
-
-> **Difference from other repos:** This repository is the **Modern Web & SaaS** version of the skill directory. If you are looking for a skill directory for **Native Desktop** projects (WPF, Qt, Swift, Win32), please visit our sister repository: [`it-project-codename-royalchampion`](https://github.com/ifredrix/it-project-codename-royalchampion).
-
----
-
-## Project Scope
-
-This skill directory covers the entire **Software Development Life Cycle (SDLC)** for modern web applications:
-
-| Phase | Related Roles |
-| --- | --- |
-| **Strategy & Business** | Product Manager, Product Owner |
-| **Design & Research** | UX Designer, UI Designer, UX Researcher |
-| **Development** | Software Architect, Lead Developer, Front-End Developer, Back-End Developer |
-| **Testing & Security** | QA Engineer (Manual), QA Automation Engineer, Security Tester |
-| **Deployment & Infrastructure** | DevOps Engineer, System Administrator, Release Manager |
-| **Project Management** | Project Manager, Scrum Master |
-
----
-
-## File Structure
+## Repository Structure
 
 ```javascript
 it-project-codename-grandwarden/
-├── SKILL.md          ← Complete Skill Directory (17 roles, 6 categories)
-├── README.md         ← This document
-└── (future assets)
-
+├── SKILL.md                 # compact routing file (always loaded first)
+└── reference/
+    ├── technical.md           # Software Architect, Lead Developer, Front-End, Back-End
+    ├── project-management.md  # Project Manager, Scrum Master
+    ├── design.md              # UX Designer, UI Designer, UX Researcher
+    ├── testing.md             # QA Engineer (Manual), QA Automation, Security Tester
+    ├── infrastructure.md      # DevOps Engineer, SysAdmin, Release Manager
+    └── strategy.md            # Product Manager, Product Owner
 ```
 
-### SKILL.md
+17 roles across 6 categories, covering the full SDLC of a modern web/SaaS
+application: strategy, design, development, testing & security, deployment &
+infrastructure, and project management.
 
-The main file containing detailed descriptions for each role within the team, including:
+## How It Saves Tokens
 
-* **6 Categories** of roles (Technical, PM, Design, Testing, Infrastructure, Strategy)
-* **17 Specific** roles
-* Skills & tasks tailored for the **modern web 2024–2026** context (PWA, microservices, cloud-native, observability, etc.)
-
----
-
-## Supported Technologies & Stacks
-
-This skill directory is designed for teams using modern web stacks:
-
-| Layer | Technology / Framework |
-| --- | --- |
-| **Front-End** | React, Vue, Angular, Svelte, Solid, Next.js, Nuxt, Astro |
-| **Back-End** | Node.js, Python (FastAPI/Django), Go, Java (Spring Boot), .NET |
-| **Database** | PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch |
-| **DevOps** | Docker, Kubernetes, Terraform, GitHub Actions, ArgoCD |
-| **Cloud** | AWS, GCP, Azure, Vercel, Netlify, Cloudflare |
-| **Testing** | Cypress, Playwright, Jest, k6, Pact |
-| **Observability** | Prometheus, Grafana, Datadog, ELK Stack |
-
----
-
-## Team Workflow Based on Skill Directory
-
-```javascript
-Product Manager & Product Owner
-        ↓
-UX Designer → UI Designer → UX Researcher
-        ↓
-Software Architect + Lead Developer
-        ↓
-Front-End Developer + Back-End Developer
-        ↓
-QA Manual + QA Automation + Security Tester
-        ↓
-DevOps + SysAdmin + Release Manager
-        ↓
-Release to Production (Cloud / CDN / Edge)
-
-```
-
-> **Project Manager** and **Scrum Master** oversee and coordinate the entire workflow above.
-
----
-
-## When to Use This Directory?
-
-Use this skill directory if your project meets the following criteria:
-
-* [x] **Web browser-based** applications (SaaS, dashboard, portal, marketplace)
-* [x] Requires **scalability** & cloud-native architecture
-* [x] Needs **Progressive Web App (PWA)** or mobile-responsive experience
-* [x] Uses **microservices** or distributed architecture
-* [x] Requires **CI/CD**, containerization, and infrastructure as code
-* [x] Needs **observability** (monitoring, logging, tracing) in production
-* [x] Requires **A/B testing**, analytics, and data-driven product decisions
-
----
-
-## When NOT to Use This Directory?
-
-Do not use this directory if your project is:
-
-* [ ] **Native desktop** applications (WPF, Qt, Swift, Win32) → use [`royalchampion`](https://github.com/ifredrix/it-project-codename-royalchampion)
-* [ ] **Native mobile** applications (iOS/Android) — requires a Mobile Developer
-* [ ] **AI/ML** projects — requires a Data Scientist & ML Engineer
-* [ ] **Game development** projects — requires a Game Developer & 3D Artist
-* [ ] **IoT / embedded systems** projects — requires an Embedded Engineer
-* [ ] **Blockchain / Web3** projects — requires a Smart Contract Developer
-
----
+- The frontmatter `description` is kept short but still contains all trigger keywords.
+- `SKILL.md` contains a **routing table** — Claude knows exactly which single
+file to open for a given request.
+- Detailed role descriptions live in `reference/*.md` and are only read on demand.
+- No duplicated content across files.
 
 ## How to Use
 
-1. **Read `SKILL.md**` to understand all available roles and skills.
-2. **Adjust according to your team size:**
+### Option 1 — Claude Code (recommended)
 
-* **Small team (5–7 people):** Several roles can be combined (e.g., PM + Scrum Master, UX + UI, DevOps + SysAdmin, Front-End + Back-End as full-stack).
-* **Large team (15–25 people):** Each role can be assigned to a dedicated person, or even multiple people per role.
+```powershell
+# from your project folder (Windows)
+git clone https://github.com/ifredrix/it-project-codename-grandwarden.git
+xcopy /E /I "it-project-codename-grandwarden" ".claude\skills\grandwarden"
+```
 
-3. **Add specialist roles** if needed (e.g., Data Engineer, Mobile Developer, Technical Writer, etc.).
-4. **Use as a reference** for:
+Claude Code automatically loads `SKILL.md` and only opens `reference/*.md`
+when needed.
 
-* Writing job descriptions & hiring
-* Team performance evaluations & career ladders
-* Identifying skill gaps within the team
-* Training & upskilling planning
+### Option 2 — Claude.ai (web)
 
----
+1. Go to **Settings → Capabilities → Skills** (or upload via chat, depending on your plan).
+2. Upload `SKILL.md` as the skill definition.
+3. When Claude needs details on a role, attach only the single relevant file
+from `reference/` — not the whole folder.
 
 ## Contributing
 
-If you find roles or skills that are less relevant to modern web development, or wish to add new trending technologies, feel free to open an **issue** or submit a **pull request**.
+If you find roles or skills that are less relevant to modern web development,
+or wish to add new trending technologies, feel free to open an **issue** or
+submit a **pull request**.
 
----
+## License
+
+MIT — see [LICENSE](LICENSE).
 
 ## Donate
-like this SKILL? Support me (Bitcoin): **1HZ2h3yyYULFT4jEGwB5ESAZUhBj7kPUa2**
+
+Like this skill? Support me (Bitcoin): **1HZ2h3yyYULFT4jEGwB5ESAZUhBj7kPUa2**
 
 ---
 
